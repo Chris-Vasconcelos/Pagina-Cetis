@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Cetis 64</title>
+    <link rel="stylesheet" href="../PROYECTO PAGINA CETIS 64/CSS/estilprin.css">
+</head>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        body {
+          margin: 0;
+    
+          background: none;
+
+
+    }
+    h2{
+      position: absolute;
+      top: 10px;
+      left: 130px;
+      color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+.hr1{
+    height: 70px;
+  width: 100%;
+  background-color: black;
+  
+  
+}
+.hr2{
+    height: 200px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 2800px;
+  
+}
+.hr3{
+  
+  width: 100%;
+  color: blue;
+  position: absolute;
+  top: 2930px;
+  
+}
+
+.cetis{
+    
+ 
+  position: absolute;
+  top: 2920px;
+
+left: 45%;
+font-weight: 800;
+font-family: arial;
+  
+}
+    .container {
+      width: 100%;
+      height: 250px;
+      background: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(29,104,187);
+    }
+    .content {
+      font-family: Arial;
+      text-align: center;
+      font-size: 2em;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .waves {
+      position: absolute;
+left: 0;
+      right: 0;
+      height: 200px;
+      bottom: 0;
+      bottom: -135px;
+      height: 527px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .wave {
+      position: absolute;
+      left: -180px;
+      bottom: 0;
+      /*width: 200px;*/
+      /*height: 200px;*/
+      /*width: 100%;*/
+      /*border-radius: 50%;*/
+      /*background:rgba(0,0,0, .3);*/
+      width: 2402px;
+      height: 427px;
+      background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+      animation: 5s wave ease-in-out infinite alternate;
+    }
+    .wave.a {
+      background-position: 0 -854px;
+    }
+    .wave.b {
+      background-position: 0 -427px;
+      animation-delay: .6s;
+    }
+    .wave.c {
+      background-position: 0 0;
+      animation-delay: 1.2s;
+    }
+    /*.container {
+      position: absolute;
+    }*/
+    @keyframes wave {
+      0% {
+        transform: translate(0 , 0);
+      }
+      50% {
+        transform: translate(-80px, 30px);
+      }
+      100% {
+        transform: translate(160px, -60px);
+      }
+    }
+
+    
+
+.logo{
+  position: absolute;
+ top: 10px;
+  left: 20px;
+  height: 50px;
+  width: 100px;
+}
+img{
+  position: absolute;
+
+  left: 20px;
+  height: 50px;
+  width: 100px;
+}
+
+
+.historia {
+  height: 215px;
+  width: 450px;
+  position: absolute;
+  top: 450px;
+  
+  
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 23px;
+  text-align: justify;
+  margin: 40px; 
+}
+.img1{
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+}
+.img2{
+    position: absolute;
+    top: 450px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+}
+.img3{
+    position: absolute;
+    top: 450px;
+    left: 920px;
+    width: 150px;
+    height: 200px;
+    border-radius: 24px;
+}
+
+
+#tooltip1{
+    position: absolute;
+    top: 400px;
+    left: 530px;
+    cursor: pointer;
+    border-bottom: 2px dotted;
+    padding: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  #tooltiptext1{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+    background-color: #c0e3f2;
+    color: hwb(0 0% 100%);
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  #tooltiptext1::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #c0e3f2 #0000 #0000 #0000;
+  }
+  #tooltip1:hover #tooltiptext1{
+  top: -130%;
+  visibility: visible;
+  opacity: 1;
+  }
+  
+
+  #tooltip2{
+    position: absolute;
+    top: 400px;
+    left: 750px;
+    cursor: pointer;
+    border-bottom: 2px dotted;
+    padding: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  #tooltiptext2{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+    background-color: #c0e3f2;
+    color: hwb(0 0% 100%);
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  #tooltiptext2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #c0e3f2 #0000 #0000 #0000;
+  }
+  #tooltip2:hover #tooltiptext2{
+  top: -130%;
+  visibility: visible;
+  opacity: 1;
+  }
+
+  
+  #tooltip3{
+    position: absolute;
+    top: 400px;
+    left: 920px;
+    cursor: pointer;
+    border-bottom: 2px dotted;
+    padding: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  #tooltiptext3{
+    position: absolute;
+    left: 35%;
+    top: 0;
+    transform: translate(-50%);
+    background-color: #c0e3f2;
+    color: hwb(0 0% 100%);
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+  }
+  #tooltiptext3:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #c0e3f2 #0000 #0000 #0000;
+  }
+  #tooltip3:hover #tooltiptext3{
+  top: -130%;
+  visibility: visible;
+  opacity: 1;
+  }
+
+
+  .partuno {
+  height: 170px;
+  width: 1100px;
+  position: absolute;
+  top: 650px;
+
+  color: #333;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 23px;
+  text-align: justify;
+  margin: 30px; 
+}
+
+.partdos {
+  height: 170px;
+  width: 1100px;
+  position: absolute;
+  top: 800px;
+ 
+  color: #333;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 23px;
+  text-align: justify;
+  margin: 30px; 
+}
+
+.partres {
+  height: 80px;
+  width: 1100px;
+  position: absolute;
+  top: 950px;
+
+  color: #333;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 23px;
+  text-align: justify;
+  margin: 30px; 
+}
+
+iframe{
+  position: absolute;
+  top: 120px;
+  left: 50px;
+border-radius: 24px;
+}
+ .dir{
+position: absolute;
+top: 120px;
+left: 500px;
+height: 300px;
+width: 500px;
+border-radius: 24px;
+border-color: black;
+
+ }
+
+ .autoridades{
+  height: 30px;
+  width: 600px;
+  position: absolute;
+  top: 1500px;
+  left: 270px;
+  
+  color: #333;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+
+  line-height: 23px;
+  text-align: justify;
+  margin: 30px; 
+}
+.listautoridades {
+  height: 420px;
+  width: 700px;
+  position: absolute;
+  top: 1600px;
+  left: 0px;
+  
+  color: #333;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 23px;
+  text-align: justify;
+  margin: 30px; 
+}
+
+.degti{
+  position: absolute;
+  top: 1600px;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  border-radius: 40px;
+}
+
+.especialidades{
+  height: 150px;
+  width: 700px;
+  position: absolute;
+  top: 2100px;
+  left: 20%;
+  
+  color: #333;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  margin: 30px; 
+}
+
+h4{
+  position: absolute;
+  top: 2270px;
+  left: 40%;
+    text-align: center;
+    font-size: 40px;
+    font-family: arial;
+    margin-top: 80px;
+    color: 		#574529;
+    text-shadow: 0px 0px 6px rgb(53, 51, 51);
+}
+
+.content-all{
+    width: 210px;
+    height: 100%;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    top: 2050px;
+    left: -0px;
+    margin-top: 80px;
+}
+
+.content-carrousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+.telefono{
+position: absolute;
+top: 2800px;
+left: 65px;
+color: white;
+font-weight: 700; 
+font-family: arial;
+
+ line-height: 23px;
+  text-align: center;
+  margin: 40px; 
+
+}
+
+
+.correo{
+position: absolute;
+top: 2800px;
+left: 900px;
+color: white;
+font-weight: 700; 
+font-family: arial;
+
+ line-height: 23px;
+  text-align: center;
+  margin: 40px; 
+
+}
+.facebook{
+position: absolute;
+top: 2800px;
+left: 500px; 
+color: white;
+font-weight: 700; 
+font-family: arial;
+
+ line-height: 23px;
+  text-align: center;
+  margin: 40px; 
+
+}
+
+
+.telefonoo{
+position: absolute;
+top: 2830px;
+left: 50px;
+color: white;
+font-weight: 600px; 
+font-family: arial;
+
+ line-height: 23px;
+  text-align: center;
+  margin: 40px; 
+
+}
+
+
+.correoo{
+position: absolute;
+top: 2830px;
+left: 800px;
+color: white;
+font-weight: 600px; 
+font-family: arial;
+
+ line-height: 23px;
+  text-align: center;
+  margin: 40px; 
+
+}
+.facebookk{
+position: absolute;
+top: 2830px;
+left: 490px; 
+color: white;
+font-weight: 600px; 
+font-family: arial;
+
+ line-height: 23px;
+  text-align: center;
+  margin: 40px; 
+
+}
+
+
+.cetiss{
+  position: absolute;
+  top: 15px;
+  left: 140px;
+font-size: 10px;
+}
+
+.navD{
+  position: absolute;
+  top: 4%;
+  left: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color:white;
+  padding: 1px;
+}
+.navP{
+  position: absolute;
+  top: 4%;
+  left: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color:white;
+  padding: 1px;
+}
+.navC{
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color:white;
+  padding: 1px;
+}
+
+.navR{
+  position: absolute;
+  top: 4%;
+  left: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  padding: 1px;
+  color:white;
+   
+}
+
+.titulo-final{
+  position: absolute;
+  top: 2960px;
+  left: 45%;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font: italic bold 100px Georgia, Serif;
+  text-shadow: -4px 3px 0 #535353, -14px 7px 0 #000000;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  font-size: 60px;
+}
+
+.contuno{
+  width: 100%;
+  height: auto;
+  background-color: black;
+
+}
+
+
+
+    </style>
+<body>
+    <hr / class="hr1">
+    <hr / class="hr2">
+<hr / class="hr3"> 
+
+
+
+    <h2 class="cetiss">Cetis 64 </h2>
+   
+
+      <img src="IMGPRINCIPAL\img2.jpg" class="logo">
+
+
+    <div class="container">
+        <div class="content">
+          <h1>CETIS No.64</h1>
+          <p>Lo que debes saber...</p>
+        </div>
+        <div class="waves">
+          <div class="wave circulo a"></div>
+          <div class="wave circulo b"></div>
+          <div class="wave circulo c"></div>
+        </div>
+      </div>
+
+      
+<div class="contuno" style="background-color: black; width:100%;">
+      <div class="historia">
+        El Centro de Estudios Tecnológicos, industrial y de servicios No. 64, fue fundado en el mes de octubre de 1980, iniciando sus actividades en las Instalaciones de la Escuela Primaria Estatal “Juan Escutia”, de la Población de San Mateo Oxtotitlán,
+       Toluca, México. Iniciando con las siguientes Carreras Técnicas:
+   </div>
+
+   <img class="img1"  src="IMGPRINCIPAL\SERVICIOSHUNANOS.jfif" alt="Servicios Urbanos">
+   <img class="img2" src="IMGPRINCIPAL\PRODUCCION.jfif" alt="Produccion">
+   <img class="img3" src="IMGPRINCIPAL\INSTRUMENTISDECONTROL.jfif" alt="Instrumento de control">
+  </div>
+   <div id="tooltip1">
+    <span id="tooltiptext1">
+    Esta carrera busca formar profesionales que puedan desempeñarse en el <br>
+    área de Recursos Humanos de una compañía, administrando el capital<br>
+     humano de la misma, con el fin de cumplir los objetivos organizacionales.</span>
+
+    <span> SERVICIOS URBANOS</span>
+  </div>
+
+<img class="img1"  src="IMGPRINCIPAL\SERVICIOSHUNANOS.jfif" alt="Servicios Urbanos">
+
+<div id="tooltip2">
+<span id="tooltiptext2">
+    La Carrera de Gestión de la Producción consiste en formar profesionales<br>
+     capaces de administrar los recursos productivos de cualquier tipo de<br>
+      organización. </span>
+
+<span> PRODUCCION</span>
+</div>
+
+<img class="img2" src="IMGPRINCIPAL\PRODUCCION.jfif" alt="Produccion">
+
+
+<div id="tooltip3">
+
+  <span id="tooltiptext3">
+    El Técnico de Nivel Superior en Instrumentación y Control <br>
+    Industrial es un profesional capacitado para instalar,<br>
+     operar, mantener y programar sistemas </span>
+
+<span> INSTRUMENTOS DE CONTROL</span>
+</div>
+<img class="img3" src="IMGPRINCIPAL\INSTRUMENTISDECONTROL.jfif" alt="Instrumento de control">
+
+<div class="partuno">La construcción de la obra civil del actual Edificio, se realizó de la siguiente manera: Sobre un terreno ubicado en la Av. Lic. Benito Juárez esquina con Juan Escutia de esta Población; se construyó en primer lugar, el edificio de la Especialidad
+  de Trabajo Social, en seguida el edificio Administrativo, posteriormente se construyeron las aulas de los edificios de Construcción y Programación, continuando con el edificio de la cafetería, almacén y sanitarios, así mismo con el edificio
+  de los talleres y finalizando con la construcción del edificio del Laboratorio Múltiple de Física, Química y Biología.
+</div>
+
+
+<p class="partdos">
+
+  En el año de 1984, se dejó de laborar en la Escuela Primaria, para pasar a ocupar las instalaciones del propio CETis No. 64, aunque en aquel tiempo no se había terminado de construir el edificio en donde actualmente, se encuentra el área de Trabajo Social.
+  En el año de 1984, se inició la Carrera de Técnico Profesional en Trabajo Social y al mismo tiempo se liquidaron las carreras de Técnico en Servicios Urbanos e Instrumentos de Control y se abren e inician los Bachilleratos en Construcción,
+  Programación y Electricidad. En 1988 se abre una nueva carrera en la Especialidad de Bachillerato Técnico en Máquinas-Herramientas
+</p>
+
+<!--NONBRE DE LA ESCUELA OFICIAL-->
+
+<p class="partres">El día 12 de octubre de 1988, por consenso de la población estudiantil del CETis No. 64, se le da el nombre a la Institución, quedando oficialmente como: “CENTRO DE ESTUDIOS TECNOLÓGICOS, industrial y de servicios No. 64, “GRAL. LÁZARO CÁRDENAS
+  DEL RÍO”
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.678024301555!2d-99.6917579!3d19.2967333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef7eccee76732849!2sCETIS%2064!5e0!3m2!1ses-419!2smx!4v1654481244409!5m2!1ses-419!2smx" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <img class="dir" src="IMGPRINCIPAL\direccion.jpg">
+
+  <div class="autoridades">
+
+  
+
+  Las autoridades que han dirigido a la institución:
+
+</div>
+
+  <div class="listautoridades">1980-1982 ING. RODRIGO BÁEZ VELÁSQUEZ<br>
+
+    1982-1984 ING. ROGELIO GARCÍA GARCÍA<br>
+     1984-1986 ARQ. RAFAEL MELÉNDEZ ARRIAGA<br>
+
+    1986-1987 ING. TOMAS MORENO HERNÁNDEZ<br>
+
+    1987-1988 LIC. LINO ORTIZ GONZÁLEZ<br>
+
+    1988-1989 LIC. JESÚS LOZANO VEGA.<br>
+
+   1990-1991 ING. JOSÉ LUIS COLÍN SAMPAYO.<br>
+
+    1991-1993 ING. ELVIRA FLORES VÁZQUEZ.<br>
+    
+
+    1993-1994 ING. ELISEO ANAYA RESENDEZ<br>
+
+    1994-1996 ING. CLEMENTE BAUTISTA PORTALES<br>
+
+    1996-1999 LIC. HUGO BARRAGAN HEREDIA.<br>
+
+    1999-1999 ING. JOSÉ MANUEL GUERRERO HERNÁNDEZ<br>
+
+    1999- 2000 ING. A. SAMUEL MEJÍA GARCÍA.<br>
+
+    2000- 2003 LIC. ENRIQUE ESPINOSA VÁZQUEZ<br>
+
+    2003-2004 ING. JOSÉ MANUEL GUERRERO HERNÁNDEZ<br>
+
+     2004-2009 LIC. RUTH MARLENE AGUILAR MORENO<br>
+     2009- 2014 LIC. IGNACIO VÁZQUEZ DELGADO<br>
+     2014- a la fecha M en FD. IGNACIO G. MORALES POSADAS</div>
+
+<img class="degti" src="IMGPRINCIPAL\img9.jpg">
+
+<div class="especialidades">Actualmente el Plantel cuenta con las especialidades:<br>
+  <br>
+
+  Bachillerato Tecnológico en Mecánica Industrial<br>
+  Bachillerato Tecnológico en Programación<br>
+  Bachillerato Tecnológico en Electricidad<br>
+  Bachillerato Tecnológico en Construcción<br>
+  Bachillerato Tecnológico en Trabajo Social</div>
+
+
+  <h4>¡EXPLORA!</h4>
+    <div class="content-all">
+        <div class="content-carrousel">
+            <figure><img src="IMGPRINCIPAL\img1.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img2.jpg"></figure>
+            <figure><img src="IMGPRINCIPAL\img3.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img4.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img5.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img6.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img7.jpg"></figure>
+            <figure><img src="IMGPRINCIPAL\img8.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img9.jpg"></figure>
+            <figure><img  src="IMGPRINCIPAL\img10.jpg"></figure>
+        </div>
+    </div>
+
+
+      
+    
+  <h2 class="titulo-final">&copy;CETIS No 64 </h2>
+
+<div class="btn">
+  <!--Boton para ir a la pagina de los datos de docentes y alumnos-->
+
+  <a href="HTML\datos.html" class="navD">Datos</a>
+
+  <!--Boton para ir a la pagina de la pagina con servicio de ventas-->
+
+  <a href="HTML\productos.html" class="navP">Productos</a>
+
+  <!--Boton para ir a la pagina para comunicarse con personal de la escuela-->
+
+  <a href="HTML\Contacto.html" class="navC">Contacto</a>
+
+  <a href="HTML\formusuarios.html" class="navR">Registrate</a>
+  
+
+</div>
+
+
+<div class="telefono">Telefono</div>
+      <div class="telefonoo">722 278 6228</div>
+   
+      <div class="correo">Correo</div>
+      <div class="correoo">director.cetis64@resems-edomex.gob.mx</div>
+    
+      <div class="facebook">Facebook</div>
+      <div class="facebookk">CETis No 64</div>
+
+<div class="title">HISTORIA</div>
+
+
+
+</body>
+
+</html>
