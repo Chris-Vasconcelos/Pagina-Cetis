@@ -1,0 +1,246 @@
+*{
+    /*VASCONCELOS SANCHEZ CHRISTOFER RICARDO
+AGUSTIN ADLER REYES ANCHEYTA
+KAREN GUADALUPE MALVAEZ SANDOVAL
+MIA TAMARA MONTIEL RUIZ
+RIGOBERTO GUERRERO MARCELO 
+CARLOS URIEL FABELA CORRAL
+4PAM 
+*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #2a2f73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 700px;
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cb5e0a6, #000046b6), url(../IMAGENES/IMGDATOS/fondo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cb5e0a6, #000046a6), url(../IMAGENES/IMGDATOS/fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+
+.olademar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+p{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.ca{
+    display: flex;
+    height: 130px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.ca h1{
+    font-size: 40px;
+}
+
+.carreras-antes h1{
+    font-size: 40px;
+}
+
+.listas{
+    padding: 10px 0;
+}
+
+li{
+    font-size: 16px;
+}
+
+.imagen-cetis > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.imagen-cetis{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-cetis{
+    width: 40%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1);
+    /*transform: scale(0);*/
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021c79c0, #0576e6c0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021c79c0, #0576e6c0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover-galeria img{
+    width: 200px;
+}
+
+.hover-galeria p{
+    color: #fff;
+    font-size: 15px;
+}
+
+.imagen-cetis:hover .hover-galeria{
+    transform: scale(0);
+}
+
+footer{
+    background: #000428;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #004e92;
+}
+
+.conten-foo{
+    text-align: center;
+    color: #fff;
+}
+
+.conten-foo h4{
+    color: #ffffff;
+    border-bottom: 3px solid #0f7bd4;
+    padding-bottom: 5px;
+    max-width: 30spx;
+}
+
+.title-final{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+}
+
+
+.administrar{
+padding: 5px;
+margin: 10px;
+    background-color: rgb(124, 4, 4);
+    border-radius: 5px ;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.admin{
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.administrar:hover{
+    background-color: #000046;
+}
+
+
+a:hover{
+    color: rgb(163, 158, 158);
+}

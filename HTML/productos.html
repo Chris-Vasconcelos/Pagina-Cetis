@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <style>
+        body {
+    margin: 10% auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+li{
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: rgb(4, 4, 4);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 700;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+       background-color: #b6b3be;
+  background-image: linear-gradient(315deg, #f0ecfc 0%, #2e1f38 80%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #b6b3be;
+    background-image: linear-gradient(315deg, #979797 0%, #a2fa8a 80%);
+    color: black;
+}
+h2:hover{
+     background-color: #b6b3be;
+    background-image: linear-gradient(315deg, #979797 0%, #a2fa8a 80%);
+}
+
+section {
+    margin: 4% auto;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+.nav-link {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+}
+.cetis:hover{
+    background-color:blue;
+    color:white;
+}
+btn-8 {
+  background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  line-height: 50px;
+  padding: 0;
+  border: none;
+}
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+      display: contents;
+      background-color:blue;
+
+}
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+  background-color:blue;
+}
+.btn-8:before{
+   height: 0%;
+   width: 2px;
+   background-color:blue;
+}
+.btn-8:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-8:hover:before {
+  height: 100%;
+}
+.btn-8:hover:after {
+  width: 100%;
+}
+.btn-8:hover{
+  background: blue;
+}
+.btn-8 span:hover{
+  color: #c797eb;
+}
+.btn-8 span:before,
+.btn-8 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-8 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-8 span:hover:before {
+  height: 100%;
+}
+.btn-8 span:hover:after {
+  width: 100%;
+}
+.btn-primary:hover{
+    background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+
+}
+  
+
+
+
+
+
+
+
+
+/*estilo responsive para un pequelo cambio del menu en pantallas de distinto tamañano*/
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        height: 25%;
+    }
+    nav {
+        padding: 10px 10px;
+    }
+}
+    </style>
+
+    <!--ESCRIPT PARA EL FUNCIONAMIENTO DEL CARRITO-->
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Variables
+            const baseDeDatos = [
+                {
+                    id: 1,
+                    nombre: 'ALEBRIJE',
+                    precio: 1500,
+                    imagen: '../IMAGENESPRO/Alebrije.jpg'
+                    //../IMAGENES/PRODUCCION.jfif
+                },
+                {
+                    id: 2,
+                    nombre: 'COHETE',
+                    precio: 1200,
+                    imagen: '../IMAGENESPRO/Cohete.jpg',
+                },
+                {
+                    id: 3,
+                    nombre: 'INSTRUMENTOS DE CONTROL',
+                    precio: 400,
+                    imagen: '../IMAGENESPRO/INSTRUMENTISDECONTROL copy.jfif'
+                },
+                {
+                    id: 4,
+                    nombre: 'JUEGO DE CARTAS',
+                    precio: 1000,
+                    imagen: '../IMAGENESPRO/Juegocartas.jpg'
+                },
+                {
+                    id: 5,
+                    nombre: 'JUEGO DEL GATO',
+                    precio: 5000,
+                    imagen: '../IMAGENESPRO/Juegodelgato.jpg'
+                },
+                {
+                    id: 6,
+                    nombre: 'LAMPARA DE COBRE',
+                    precio: 5500,
+                    imagen: '../IMAGENESPRO/Lámparadecobre.jpg'
+                },
+                {
+                    id: 7,
+                    nombre: 'LONAS',
+                    precio: 6000,
+                    imagen: '../IMAGENESPRO/Lonas.jpg'
+                },
+                {
+                    id: 8,
+                    nombre: 'MAQUETAS',
+                    precio: 1500,
+                    imagen: '../IMAGENESPRO/Maquetas.jpg'
+                },
+                {
+                    id: 9,
+                    nombre: 'OBRAS DE SHAKIRON',
+                    precio: 500,
+                    imagen: '../IMAGENESPRO/Obras.jpg'
+                },
+                {
+                    id: 10,
+                    nombre: 'PAGINA DE GESTION BARBERIA',
+                    precio: 6000,
+                    imagen: '../IMAGENESPRO/Paginabarberia.jpg'
+                },
+
+                {
+                    id: 11,
+                    nombre: 'PAGINA DE GESTION DE PASTELERIA',
+                    precio: 1000,
+                    imagen: '../IMAGENESPRO/Paginapasteleria.jpg'
+                },
+                {
+                    id: 12,
+                    nombre: 'PAGINA DE VENTA DE PIZZA',
+                    precio: 6000,
+                    imagen: '../IMAGENESPRO/paginapizzeria.jpg'
+                },
+                {
+                    id: 13,
+                    nombre: 'PATH-PANEL',
+                    precio: 500,
+                    imagen: '../IMAGENESPRO/Patchpanel.jpg'
+                },
+                {
+                    id:14,
+                    nombre: 'PRODUCCIÓN',
+                    precio: 400,
+                    imagen: '../IMAGENESPRO/PRODUCCION.jfif',
+                },
+                {
+                    id: 15,
+                    nombre: 'Reloj Digital',
+                    precio: 500,
+                    imagen: '../IMAGENESPRO/Relojdigital.jpg'
+                },
+                {
+                    id:16,
+                    nombre: 'Recursos Humanos',
+                    precio: 600,
+                    imagen: '../IMAGENESPRO/SERVICIOSHUNANOS.jpg'
+                }
+
+
+            ];
+            let carrito = [];
+            let data = [];//echo fredy
+            const DOMData = document.querySelector('#data');//echo fredy
+            const divisa = '$';
+            const DOMitems = document.querySelector('#items');
+            const DOMcarrito = document.querySelector('#carrito');
+            const DOMtotal = document.querySelector('#total');
+            const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+            const miLocalStorage = window.localStorage;
+
+            // Funciones
+
+            /**
+            * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
+            */
+            function renderizarProductos() {
+                baseDeDatos.forEach((info) => {
+                    // Estructura
+                    const miNodo = document.createElement('div');
+                    miNodo.classList.add('card', 'col-sm-4');
+                    // Body
+                    const miNodoCardBody = document.createElement('div');
+                    miNodoCardBody.classList.add('card-body');
+                    // Titulo
+                    const miNodoTitle = document.createElement('h5');
+                    miNodoTitle.classList.add('card-title');
+                    miNodoTitle.textContent = info.nombre;
+                    // Imagen
+                    const miNodoImagen = document.createElement('img');
+                    miNodoImagen.classList.add('img-fluid');
+                    miNodoImagen.setAttribute('src', info.imagen);
+                    // Precio
+                    const miNodoPrecio = document.createElement('p');
+                    miNodoPrecio.classList.add('card-text');
+                    miNodoPrecio.textContent = `${divisa}${info.precio}`;
+                    // Boton 
+                    const miNodoBoton = document.createElement('button');
+                    miNodoBoton.classList.add('btn', 'btn-primary');
+                    miNodoBoton.textContent = '+';
+                    miNodoBoton.setAttribute('marcador', info.id);
+                    miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+                    // Insertamos
+                    miNodoCardBody.appendChild(miNodoImagen);
+                    miNodoCardBody.appendChild(miNodoTitle);
+                    miNodoCardBody.appendChild(miNodoPrecio);
+                    miNodoCardBody.appendChild(miNodoBoton);
+                    miNodo.appendChild(miNodoCardBody);
+                    DOMitems.appendChild(miNodo);
+                });
+            }
+
+            /**
+            * Evento para añadir un producto al carrito de la compra
+            */
+            function anyadirProductoAlCarrito(evento) {
+                // Anyadimos el Nodo a nuestro carrito
+                carrito.push(evento.target.getAttribute('marcador'))
+                // Actualizamos el carrito 
+                renderizarCarrito();
+                // Actualizamos el LocalStorage
+                guardarCarritoEnLocalStorage();
+
+            }
+
+            /**
+            * Dibuja todos los productos guardados en el carrito
+            */
+            function renderizarCarrito() {
+                // Vaciamos todo el html
+                DOMcarrito.textContent = '';
+                // Quitamos los duplicados
+                const carritoSinDuplicados = [...new Set(carrito)];
+                // Generamos los Nodos a partir de carrito
+                carritoSinDuplicados.forEach((item) => {
+                    // Obtenemos el item que necesitamos de la variable base de datos
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {
+                        // ¿Coincide las id? Solo puede existir un caso
+                        return itemBaseDatos.id === parseInt(item);
+                    });
+                    // Cuenta el número de veces que se repite el producto
+                    const numeroUnidadesItem = carrito.reduce((total, itemId) => {
+                        // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
+                        return itemId === item ? total += 1 : total;
+                    }, 0);
+                    // Creamos el nodo del item del carrito
+
+                    //con document.createElement creamos un elemento
+                    const miNodo = document.createElement('div');
+
+                    // con classList.add damos una clase
+                    miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+
+                    //con setAttribute se le da un valor como un id
+                    miNodo.setAttribute('id', 'producslec');
+
+                    miNodo.setAttribute('name', 'producslecf');
+                    //con textContent sera el texto que se imprimira en el navegador
+                    miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} -${divisa}${miItem[0].precio*numeroUnidadesItem}`;
+                    data.push({
+                        "Cantidad": numeroUnidadesItem, "Nombre": miItem[0].nombre, "Precio": (miItem[0].precio * numeroUnidadesItem)
+                    });//mandar como objetos, las cosas del carro seleccionado
+                    // Boton de borrar
+
+                    const miBoton = document.createElement('label');
+                    //clase del boton
+                    miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+                    miBoton.setAttribute('id','btnborrar');
+
+                    //texto imprimido
+                    miBoton.textContent = 'Quitar';
+
+                    //se le da un estilo 
+                    miBoton.style.alignleft = '1rem';
+                    miBoton.dataset.item = item;
+                    miBoton.addEventListener('click', borrarItemCarrito);
+                    // Mezclamos nodos
+                    miNodo.appendChild(miBoton);
+                    DOMcarrito.appendChild(miNodo);
+                });
+                // Renderizamos el precio total en el HTML
+                DOMData.value=JSON.stringify(data);
+                DOMtotal.textContent = calcularTotal();
+            }
+
+            /**
+            * Evento para borrar un elemento del carrito
+            */
+            function borrarItemCarrito(evento) {
+                // Obtenemos el producto ID que hay en el boton pulsado
+                const id = evento.target.dataset.item;
+                // Borramos todos los productos
+                carrito = carrito.filter((carritoId) => {
+                    return carritoId !== id;
+                });
+                // volvemos a renderizar
+                renderizarCarrito();
+                // Actualizamos el LocalStorage
+                guardarCarritoEnLocalStorage();
+            }
+
+            /**
+             * Calcula el precio total teniendo en cuenta los productos repetidos
+             */
+            function calcularTotal() {
+                // Recorremos el array del carrito 
+                return carrito.reduce((total, item) => {
+                    // De cada elemento obtenemos su precio
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {
+                        return itemBaseDatos.id === parseInt(item);
+                    });
+                    // Los sumamos al total
+                    return total + miItem[0].precio;
+                }, 0).toFixed(2);
+            }
+
+            /**
+            * Varia el carrito y vuelve a dibujarlo
+            */
+            function vaciarCarrito() {
+                // Limpiamos los productos guardados
+                data = [];
+                // Renderizamos los cambios
+                renderizarCarrito();
+                // Borra LocalStorage
+                localStorage.clear();
+            
+            }
+            function guardarCarritoEnLocalStorage() {
+                miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+            }
+
+            function cargarCarritoDeLocalStorage() {
+                // ¿Existe un carrito previo guardado en LocalStorage?
+                if (miLocalStorage.getItem('carrito') !== null) {
+                    // Carga la información
+                    carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+                }
+            }
+
+
+            // Eventos
+            DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
+            // Inicio
+            cargarCarritoDeLocalStorage();
+            renderizarProductos();
+            renderizarCarrito();
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!--MENU PARA QUE EL USUARIO PUEDA IR A LOS DEMAS SITIOS WEB-->
+
+    <header>
+
+        <!--LINK PARA IR A LA PAGINA PRINCIPAL DESDE LA IMAGEN-->
+       
+
+ 
+        <a href="../index.html" class="logo">
+
+            <!--LOGO DE LA ESCUELA-->
+
+            <img src="../IMAGENESPRO/LOGO/LOGCETIS.jpg" alt="Cetis 64">
+
+            <h2 class="custom-btn btn-8" >Cetis 64 </h2>
+
+        </a>
+
+        <!--links para ir a las otras paginas-->
+
+        <nav class="btnm">
+
+            <!--LINK PARA IR A LA PAGINA PRINCIPAL-->
+
+      
+             <a class="custom-btn btn-8" href="../index.html"><span>Inicio</span></a>
+
+            <!--LINK PARA LA PAGINA DE LOS DATOS DE ALUMNOS, MAESTROS Y OTROS-->
+
+            <a href="../HTML/datos.html" class="custom-btn btn-8">Datos</a>
+
+            <!--LINK PARA LA PAGINA DEL CONTACTO DE LA ESCUELA-->
+
+            <a href="../HTML/Contacto.html" class="custom-btn btn-8">Contacto</a>
+
+        </nav>
+
+    </header>
+    <div id="container" class="container">
+
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+    </div>
+    <form action="../PHP/carro.php" method="post"> 
+        <!-- Carrito --> 
+        <aside class="col-sm-4"> 
+            <h2 class="carro">Carrito</h2>
+            <!-- Elementos del carrito -->
+            <div data-value="valor" id="inputText2">
+
+                <div class="list-group" id="carrito"></div>
+
+                <!-- el imput  donde mandamos los datos como objeto -->
+                <input type="hidden" id="data" name="data" value="">
+            </div>
+            <!-- Precio total -->
+            <p class="text-right">Total: $ <span id="total"></span></p>
+            <label class="btn btn-danger" id="boton-vaciar" >Vaciar</label>
+            <br>
+           
+            <button class="btn btn-danger" type="submit" id="boton-enviar" name="regist">Enviar</button>
+        
+
+        </aside>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+<html>
+	
+<head>
+	<title>Formulario Registro</title>
+	<link rel="stylesheet" href="../CSS/estilosregistro.css">
+	<header>
+		<nav>
+			<a href="../index.html">Inicio</a>
+			<a href="../HTML/Contacto.html">Contacto</a>
+
+		</nav>
+		<section class="textos-header">
+			<h1>Registro Profesores</h1>
+			<h2>Cetis No.64</h2>
+		</section>
+	</header>
+</head>
+
+<body>
+	<header2>
+		<form action="PHPPROFESOR\REGISPROF.php" method="post" id="form" class="form">
+			<div class="form">
+				<h1>Registro</h1>
+
+				<div class="grupo">
+					<input type="tel" name="matri" id="matri" minlength="14" maxlength="14" required="" ><samp
+						class="barra"></samp>
+					<label for=""> Matricula</label>
+
+					<div class="grupo">
+						<input type="text" name="nombre" id="nombre" required=""><samp class="barra"></samp>
+						<label for="">Nombre</label>
+					</div>
+					<div class="grupo">
+						<input type="text" name="apep" id="apep" required><samp class="barra"></samp>
+						<label for="">Apellido Paterno</label>
+					</div>
+					<div class="grupo">
+						<input type="text" name="apem" id="apem" required><samp class="barra"></samp>
+						<label for="">Apellido Materno</label>
+					</div>
+
+					<div class="grupo">
+						<input type="text" name="curp" id="curp" minlength="18" maxlength="18" required><samp
+							class="barra"></samp>
+						<label for="">Curp</label>
+					</div>
+
+					<div class="grupo">
+						<input type="text" name="materia" id="materia" required><samp class="barra"></samp>
+						<label for="">Materia a impartir</label>
+					</div>
+
+					<div class="grupo">
+						<input type="email" name="cor" id="cor" required><samp class="barra"></samp>
+						<label for="">Correo electronico</label>
+					</div>
+
+					<div class="grupo">
+						<input type="number" name="Edad" id="Edad" required><samp class="barra"></samp>
+						<label for="">Edad</label>
+					</div>
+
+					<div class="grupo">
+						<input type="date" name="Fecha" id="Fecha" required><samp class="barra"></samp>
+						<label for="">Fecha de nacimiento</label>
+					</div>
+
+				
+					<div class="grupo">
+						<input type="" name="tel" id="tel" minlength="10" maxlength="10" pattern="[0-9]+" required><samp
+							class="barra"></samp>
+						<label for="">Telefono</label>
+					</div>
+
+					<div class="grupo">
+						<label for="Genero">Genero</label>
+						<br>
+						<br>
+
+						<select name="gen" id="gen">
+							<option value="M">M</option>
+							<option value="F">F</option>
+							<option value="O">Otro</option>
+						</select>
+
+
+					</div>
+
+
+					<input type="submit" class="submit" id="regist" name="regist" value="Registrar">
+		</form>
+	</header2>
+
+</body>
+
+</html>

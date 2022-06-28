@@ -1,0 +1,79 @@
+Crear base de datos con el NOMBRE: cetis64
+para su coorecto funcionamiento
+
+POR FALLA DE DESCARGA NO SE PUDO EXPORTAR LA BASE DE DATOS COMO ES ECHO NORMALMENTE, AL MOMENTO DE EXPORTAR MANDABA CONEXION DE RED
+
+TABLA UNO
+
+CREATE TABLE `alumno` (
+ `Id_alumno` int(11) NOT NULL AUTO_INCREMENT,
+ `Nombre_a` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+ `ApellidoM_a` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+ `ApellidoP_a` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+ `Correo_a` varchar(120) COLLATE utf8_unicode_ci NOT NULL,
+ `NumControl_a` varchar(14) COLLATE utf8_unicode_ci NOT NULL,
+ `Tel_a` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+ `Curp_a` varchar(18) COLLATE utf8_unicode_ci NOT NULL,
+ `Genero_a` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`Id_alumno`)
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+
+
+TABLA DOS 
+
+
+	CREATE TABLE `producto` (
+ `IdProducto` int(11) NOT NULL AUTO_INCREMENT,
+ `NombreP` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+ `CantidadP` varchar(5) COLLATE utf8_unicode_ci NOT NULL,
+ `Total` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+ PRIMARY KEY (`IdProducto`)
+) ENGINE=InnoDB AUTO_INCREMENT=338 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+
+TABLA TRES
+
+
+CREATE TABLE `profesores` (
+ `id_prof` int(11) NOT NULL AUTO_INCREMENT,
+ `Matricula` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Nombre_p` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Apellido_P` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `ApellidoM_P` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Curp_p` varchar(18) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Maimpar` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Correo_Pro` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Edad` varchar(2) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Fecha de Nacimiento` date NOT NULL,
+ `Numero` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `Genero` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+ PRIMARY KEY (`id_prof`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+
+TABLA CUATRO
+
+	CREATE TABLE `usuario` (
+ `Id_u` int(11) NOT NULL AUTO_INCREMENT,
+ `Nombre_u` varchar(80) NOT NULL,
+ `ApellidoM_u` varchar(70) NOT NULL,
+ `ApellidoP_u` varchar(70) NOT NULL,
+ `Curp_u` varchar(18) NOT NULL,
+ `Correo_u` varchar(80) NOT NULL,
+ `Telefono_u` varchar(10) NOT NULL,
+ PRIMARY KEY (`Id_u`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=latin1
+
+
+
+TABLA CINCO 
+
+
+CREATE TABLE `usuarios` (
+ `Id` int(11) NOT NULL AUTO_INCREMENT,
+ `nombre` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `username` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `passaword` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
+ PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+

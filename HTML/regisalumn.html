@@ -1,0 +1,73 @@
+
+<html>
+<head>
+
+<title>Formulario Registro</title>
+<link rel="stylesheet" href="../CSS/estilosregistro.css">
+<header>
+<nav>
+	<a href="../index.html">Inicio</a>
+	<a href="">Carreras</a>
+	<a href="">Servicios</a>
+</nav>
+<section class="textos-header">
+	<h1>Registro de Alumnos</h1>
+	<h2>Cetis No.64</h2>
+</section>
+</header>
+</head>
+<body>
+	<header2>
+<form action="../PHPALUMNO/REGISALUMNO.php" method="post" id="form" class="form">
+<div class="form">
+<h1>Registro</h1>
+	
+<div class="grupo">
+	<input type="text" name="nombre" id="nombre" required="" ><samp class="barra"></samp>
+	<label for="">Nombre</label>
+</div>
+<div class="grupo">
+	<input type="text" name="apep" id="apep" required><samp class="barra"></samp>
+	<label for="">Apellido Paterno</label>
+</div>
+<div class="grupo">
+	<input type="text" name="apem" id="apem"  required><samp class="barra"></samp>
+	<label for="">Apellido Materno</label>
+</div>
+<div class="grupo">
+	<input type="email" name="cor" id="cor" required><samp class="barra"></samp>
+	<label for="">Correo electronico</label>
+</div>
+<div class="grupo">
+	<input type="text" name="noc" id="noc"  minlength="14" maxlength="14" pattern="[0-9]+" required><samp class="barra"></samp>
+	<label for="">Numero de control</label>
+</div>
+<div class="grupo">
+	<input type="" name="tel" id="tel"  minlength="10" maxlength="10" pattern="[0-9]+" required><samp class="barra"></samp>
+	<label for="">Telefono</label>
+</div>
+<div class="grupo">
+	<input type="text" name="curp" id="curp"  minlength="18" maxlength="18" required><samp class="barra"></samp>
+	<label for="">Curp</label>
+</div>
+<div class="grupo">
+	<label for="Genero">Genero</label>
+	<br>
+	<br>
+
+	<select name="gen" id="">
+<option value="M">M</option>
+<option value="F">F</option>
+<option value="O">Otro</option>
+	</select>
+
+
+</div>
+
+
+<input type="submit" class="submit" id="regist" name="regist" value="Registrar">
+	</form>
+</header2>
+
+</body>
+</html>

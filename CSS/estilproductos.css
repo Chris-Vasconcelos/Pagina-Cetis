@@ -1,0 +1,242 @@
+body {   /*VASCONCELOS SANCHEZ CHRISTOFER RICARDO
+    AGUSTIN ADLER REYES ANCHEYTA
+    KAREN GUADALUPE MALVAEZ SANDOVAL
+    MIA TAMARA MONTIEL RUIZ
+    RIGOBERTO GUERRERO MARCELO 
+    CARLOS URIEL FABELA CORRAL
+    4PAM 
+    */
+    padding: 2%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+  
+    color: #212529;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+header {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10;
+    display: flex;
+    height: 25%;
+    justify-content: space-between;
+    left: 0;
+    min-height: 700;
+    position: fixed;
+    right: 0%;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    /*VASCONCELOS SANCHEZ CHRISTOFER RICARDO
+AGUSTIN ADLER REYES ANCHEYTA
+KAREN GUADALUPE MALVAEZ SANDOVAL
+MIA TAMARA MONTIEL RUIZ
+RIGOBERTO GUERRERO MARCELO 
+CARLOS URIEL FABELA CORRAL
+4PAM 
+*/
+    color: rgb(191, 183, 183);
+    text-decoration: none;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+}
+
+.logo img {
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 1px;
+}
+
+.btnm a {
+    font-weight: 600;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: rgb(79, 79, 79);
+}
+
+section {
+    margin: 1% ;
+}
+
+/*CARRITO*/
+
+.container {
+    padding: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: 5%;
+
+}
+
+#carrito {
+    background-color: rgb(16, 16, 16);
+    padding: 2%;
+    margin: 2%;
+    width: 20%;
+border-radius: 5px;
+    display: table-row-group;
+
+}
+
+#inputText2{
+    border-radius: 10px;
+    color: rgb(255, 0, 0);
+}
+
+#producslec{
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/*boton borrar*/
+#btnborrar{
+    width: 60px;
+    margin: 10%;
+}
+
+.card-body {
+    background-color: rgb(0, 0, 0);
+    margin: .5%;
+    height: 30%;
+    width: 25%;
+    /* IMPORTANTE */
+    float: left;
+
+        border-radius: 10px;
+        border-bottom: #dc3545;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+
+.img-fluid {
+  
+    width: 40%;
+    height: 100px;
+}
+
+.card-title{
+    font-size: 15px;
+}
+
+.card-text{
+    font-size: 10px;
+    padding: 0%;
+}
+.carro {
+    font-size: 10px;
+    padding: 0%;
+}
+
+.btn btn-danger mx-5{
+    width: 20px;
+}
+
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-danger {
+    color: rgb(0, 0, 0);
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+   
+    font-size: 1rem;
+
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 1px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+
+@media(max-width:700px) {
+
+    header {
+        flex-direction: column;
+
+        height: 50px;
+
+        padding: 4%;
+    }
+
+    nav {
+
+        padding: .5%;
+    }
+
+    .logo img {
+        height: 25px;
+        margin-right: 5px;
+        border-radius: 2.5px;
+    }
+
+}

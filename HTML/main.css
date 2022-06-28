@@ -1,0 +1,199 @@
+/*VASCONCELOS SANCHEZ CHRISTOFER RICARDO
+AGUSTIN ADLER REYES ANCHEYTA
+KAREN GUADALUPE MALVAEZ SANDOVAL
+MIA TAMARA MONTIEL RUIZ
+RIGOBERTO GUERRERO MARCELO 
+CARLOS URIEL FABELA CORRAL
+4PAM 
+*/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(135deg, rgba(34,193,195,1) 23%, rgba(253,247,45,1) 100%); 
+}
+
+
+input{
+    border: solid 12;
+    border-radius: 3px;
+}
+
+input[type=text], input[type=password]{
+    padding: px;
+    font-size: 18px;
+    outline: none;
+    width: 250px;
+}
+input[type=submit]{
+    background-color: #1E69E3;
+    color: white;
+    padding: 8px;
+    border: none;
+    width: 150px;
+}
+input:hover{
+    background-color: black;
+    color: wheat;
+}
+.center{
+    text-align: center;
+}
+
+.opcion{
+    padding: 5px 0;
+}
+
+.barra{
+    background-color:rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.seleccionado{
+    background-color: rgb(33, 90, 143);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+#menu{
+   
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: center;
+font-size: 10px;
+text-align: center;
+}
+.elim{
+    background-color: orangered;
+    width: 100px;
+    height: auto;
+}
+
+
+h1{
+    font-size: 10px;
+    display: flex;
+    color: white;
+
+}
+
+
+.uno{
+    background-color: black;
+    width: 100px;
+    height: auto;
+    display: table-row;
+    margin: 1%;
+}
+
+.dos{
+    background-color: black;
+    width:100px;
+    height: auto;
+    display: table-row;
+    margin: 1%;
+}
+
+.tres{
+
+    background: black;
+    width: 80px;
+    height: 30px;
+    display:table-row;
+    text-align: center;
+    margin: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-left: 1%;
+    font-size: 20px;
+
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+#menu ul{
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+#menu ul li{
+    display: flexbox;
+}
+#menu ul li a{
+    color: #1E69E3;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color: rgb(227, 109, 30);
+    text-decoration: none;
+}
+
+.formu{
+    padding: auto;
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*botones de registro*/
+
+.btnaalum{
+    background-color: red;
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+.regisprof{
+    background-color: red;
+    width: 90px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1%;
+}
+.Conalumn{
+    background-color: rgb(247, 185, 14);
+    width: 90px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.conprof{
+    background-color: rgb(232, 115, 61);
+    width: 90px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1%;
+}
